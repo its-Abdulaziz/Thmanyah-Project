@@ -1,7 +1,5 @@
 import React from 'react'
 import classNames from "classnames";
-import Link from 'next/link';
-import Home from '../page';
 
 const Menus = [
     { title: "Home", src: "home" },
@@ -13,8 +11,8 @@ const Menus = [
 
 const Sidebar = () => {
     const wrapperClasses = classNames(
-        "h-screen px-4 pt-8 pb-4 bg-bkcolor flex-col justify-between border-r border-bkcolor-lighter shadow-sm w-1/6"
-    );
+        'h-screen px-4 pt-8 pb-4 bg-bkcolor flex-col justify-between border-r border-b border-bkcolor-lighter',
+        'w-full lg:w-1/6');
   return (
     <div className={wrapperClasses}>
         <div className="text-xl font-bold mb-5"> 

@@ -1,17 +1,15 @@
 import React from 'react'
 import Sidebar from './Sidebar'
-import SidebarItem from "./Sidebar"
-
-import { LayoutDashboard, Home, StickyNote, Layers, Flag, Calendar, LifeBuoy, Settings } from "lucide-react";
-
+import SearchPage from './SearchPage'
 
 const Layout = () => {
   return (
-    <div className='h-screen flex flex-row justify-start'>
+    <>
+    <div className='flex flex-col lg:flex-row h-screen'>
         <Sidebar />
-       
-        
+        <SearchPage/>
     </div>
+    </>
   )
 }
 
