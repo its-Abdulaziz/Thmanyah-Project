@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+@CrossOrigin(origins = {"http://localhost:3000", "https://itunes-search-task.azurewebsites.net"})
 @RestController
 public class PostController {
     private final Service service;
